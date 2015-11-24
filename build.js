@@ -3,6 +3,7 @@ var log = require("./log");
 var files = require("./files");
 var fs = require("fs");
 var rebuild = require("./rebuild");
+var Promise = require("bluebird");
 
 function build(pro, args) {
   return new Promise(function(resolve, reject) {
